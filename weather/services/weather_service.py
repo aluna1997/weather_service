@@ -83,20 +83,23 @@ class WeatherService:
         
         owm_api_url = f'{base_url}?{urlencode(query_params)}'
         
-        response = requests.get(owm_api_url)
-        response.raise_for_status()
-        data = response.json()
-
-        if data and data.get('daily'):
-            forecast_data = []
-            for day in data.get('daily'):
-                d_aux = {}
-                d_aux['datetime'] = datetime.datetime.fromtimestamp(day.get('dt')).strftime('%Y-%m-%d')
-                d_aux['temp_min'] = day.get('temp').get('min')
-                d_aux['temp_max'] = day.get('temp').get('max')
-                forecast_data.append(d_aux)
-            return forecast_data
-        else:
+        try:
+            response = requests.get(owm_api_url)
+            response.raise_for_status()
+            data = response.json()
+        
+            if data and data.get('daily'):
+                forecast_data = []
+                for day in data.get('daily'):
+                    d_aux = {}
+                    d_aux['datetime'] = datetime.datetime.fromtimestamp(day.get('dt')).strftime('%Y-%m-%d')
+                    d_aux['temp_min'] = day.get('temp').get('min')
+                    d_aux['temp_max'] = day.get('temp').get('max')
+                    forecast_data.append(d_aux)
+                return forecast_data
+            else:
+                return []
+        except requests.HTTPError:
             return []
         
     @staticmethod
