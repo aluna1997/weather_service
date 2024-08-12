@@ -1,5 +1,6 @@
 import requests
 import datetime
+import os
 
 from typing import Dict, List, Optional
 from urllib.parse import urlencode
@@ -71,7 +72,7 @@ class WeatherService:
                                 If no data is found or if an error occurs, an empty list is returned.
         """
         base_url = 'https://api.openweathermap.org/data/2.5/onecall'
-        owm_api_key = '46a187ce0fe63dd82859450fb71017fd'
+        owm_api_key = os.environ.get('OPEN_WEATHER_API_KEY') 
         query_params = {
             'lat': lat,
             'lon': long,
