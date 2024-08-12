@@ -7,7 +7,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'your-secret-key')
 DEBUG = False
-ALLOWED_HOSTS = ['weatherservice.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['weatherservice-17e0bb6568e3.herokuapp.com', 'localhost', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
