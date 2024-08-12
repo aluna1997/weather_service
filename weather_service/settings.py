@@ -4,14 +4,9 @@ import dj_database_url
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=c5b#6^aye6^i4g!2u8*ka74(1!d#o*tw@7^g_g!m1$h(o9l-r'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your-secret-key')
+DEBUG = False
 ALLOWED_HOSTS = ['weatherservice.herokuapp.com', 'localhost', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -96,7 +91,6 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-'''
 # For Heroku
 LOGGING = {
     "version": 1,
@@ -120,6 +114,7 @@ LOGGING = {
         }
     },
 }
+
 '''
 # For local
 LOGGING = {
@@ -146,3 +141,4 @@ LOGGING = {
         }
     },
 }
+'''
