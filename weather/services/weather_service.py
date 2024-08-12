@@ -71,7 +71,7 @@ class WeatherService:
                                 If no data is found or if an error occurs, an empty list is returned.
         """
         base_url = 'https://api.openweathermap.org/data/2.5/onecall'
-        owm_api_key = 'a5a47c18197737e8eeca634cd6acb581'
+        owm_api_key = '46a187ce0fe63dd82859450fb71017fd'
         query_params = {
             'lat': lat,
             'lon': long,
