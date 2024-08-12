@@ -1,0 +1,13 @@
+2024-08-12 06:37:47,547 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-08-12 06:37:52,812 (INFO)- django.utils.autoreload- /Users/mooncode/Documents/weather_service/weather_service/weather_service/settings.py changed, reloading.
+2024-08-12 06:37:53,102 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-08-12 06:38:40,494 (INFO)- django.utils.autoreload- /Users/mooncode/Documents/weather_service/weather_service/weather_service/settings.py changed, reloading.
+2024-08-12 06:38:40,797 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-08-12 06:38:41,974 (INFO)- django.utils.autoreload- /Users/mooncode/Documents/weather_service/weather_service/weather_service/settings.py changed, reloading.
+2024-08-12 06:38:42,161 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-08-12 06:38:46,397 (INFO)- django.utils.autoreload- /Users/mooncode/Documents/weather_service/weather_service/weather_service/settings.py changed, reloading.
+2024-08-12 06:38:46,600 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-08-12 07:02:25,378 (INFO)- django.utils.autoreload- /Users/mooncode/Documents/weather_service/weather_service/weather_service/settings.py changed, reloading.
+2024-08-12 07:02:25,725 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-08-12 07:15:42,686 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-08-12 07:23:22,894 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
